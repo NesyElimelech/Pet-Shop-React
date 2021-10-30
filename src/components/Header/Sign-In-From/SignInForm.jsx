@@ -28,8 +28,7 @@ const SignInForm = ({ isActive }) => {
         Remember me
       </label>
       <button type='submit' className='btn'>
-        {' '}
-        Sign In{' '}
+        Sign In
       </button>
       <div className='links'>
         <a href='#'>Forgot password?</a>

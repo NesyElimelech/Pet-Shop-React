@@ -11,10 +11,20 @@ import {
 
 const Header = () => {
   const [isActive, setIsActive] = useState(false);
+  const [isClicked, setIsClicked] = useState(false);
 
-  const toggleActive = () => {
+  const toggleForm = () => {
     setIsActive(!isActive);
   };
+
+  const toggleNavbar = () => {
+    setIsClicked(!isClicked);
+  };
+
+  useEffect(() => {
+    if (isActive) setIsClicked(false);
+    if (isClicked) setIsActive(false);
+  }, [isActive, isClicked]);
 
   return (
     <header className='header'>
@@ -23,7 +33,7 @@ const Header = () => {
         <a href='#'>shop</a>
       </div>
 
-      <nav className='navbar'>
+      <nav className={isClicked ? 'navbar expand' : 'navbar'}>
         <a href='#home'>Home</a>
         <a href='#about'>About</a>
         <a href='#shop'>Shop</a>
@@ -37,12 +47,13 @@ const Header = () => {
           className='icons-icon'
           id='menu-btn'
           icon={faBarsStaggered}
+          onClick={toggleNavbar}
         />
         <FontAwesomeIcon className='icons-icon' icon={faShoppingCart} />
         <FontAwesomeIcon
           className='icons-icon'
           icon={faUser}
-          onClick={toggleActive}
+          onClick={toggleForm}
         />
       </div>
 
