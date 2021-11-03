@@ -4,7 +4,19 @@ import './Hero.css';
 const Hero = () => {
   return (
     <section id='home' className='hero'>
-      <h1 className='headline'>Welcome to Paw-Shop</h1>
+      <div className='content'>
+        <h3 className='headline'>
+          <span>Hi</span> Welcome to our pet shop
+        </h3>
+        <a href='#' className='btn'>
+          shop now
+        </a>
+      </div>
+      <img
+        src='../../Assets/images/bottom_wave.png'
+        alt='waves'
+        className='waves'
+      />
     </section>
   );
 };

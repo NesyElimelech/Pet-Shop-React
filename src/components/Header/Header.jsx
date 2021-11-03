@@ -20,14 +20,13 @@ const Header = () => {
   const toggleNavbar = () => {
     setIsClicked(!isClicked);
   };
-
   useEffect(() => {
     if (isActive) setIsClicked(false);
     if (isClicked) setIsActive(false);
   }, [isActive, isClicked]);
 
   return (
-    <header className='header'>
+    <header id='header' className='header'>
       <div className='logo'>
         <FontAwesomeIcon icon={faPaw} className='logo-icon' />
         <a href='#'>shop</a>

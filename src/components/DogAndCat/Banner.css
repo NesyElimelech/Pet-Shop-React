@@ -1,0 +1,29 @@
+.banner {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 2rem 0;
+}
+
+.banner .image {
+  flex: 1 1 40rem;
+}
+.banner .image img {
+  width: 100%;
+}
+
+.banner .content {
+  flex: 1 1 40rem;
+  padding: 4rem;
+  text-align: center;
+}
+.banner .content h3 {
+  color: var(--black);
+  font-size: 4rem;
+}
+
+.banner p {
+  font-size: 1.8rem;
+  padding: 1rem 0;
+  line-height: 2;
+}

@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/svg+xml" href="/src/favicon.svg" />
+    <link rel="icon" href="favicon.ico" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -15,5 +15,22 @@
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
+    <script>
+      window.onscroll = () => {
+        document.querySelector('.login-form').classList.remove('active');
+        if (window.scrollY > 0) {
+          document.querySelector('#header').classList.add('active');
+        } else {
+          document.querySelector('#header').classList.remove('active');
+        }
+      };
+      window.onload = () => {
+        if (window.scrollY > 0) {
+          document.querySelector('#header').classList.add('active');
+        } else {
+          document.querySelector('#header').classList.remove('active');
+        }
+      };
+    </script>
   </body>
 </html>
