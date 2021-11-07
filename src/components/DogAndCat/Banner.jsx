@@ -16,6 +16,7 @@ const Banner = () => {
             here you can find all kind of snacks for your dag. <br /> dental
             snacks, training snacks, and in all sizes.
           </p>
+          <div className='amount'>$15.00 - $30.00</div>
           <a href='#'>
             <img src='/Assets/images/shop_now_dog.png' alt='button' />
           </a>
@@ -30,6 +31,7 @@ const Banner = () => {
             give your cat only the best, all natural ingredients. <br /> flavors
             like: salmon, tuna and lamb.
           </p>
+          <div className='amount'>$15.00 - $30.00</div>
           <a href='#'>
             <img src='/Assets/images/shop_now_cat.png' alt='button' />
           </a>

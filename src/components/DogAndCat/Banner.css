@@ -24,6 +24,33 @@
 
 .banner p {
   font-size: 1.8rem;
+  color: var(--light-gray);
   padding: 1rem 0;
   line-height: 2;
+}
+
+.banner .amount {
+  font-size: 3.5rem;
+  font-weight: 300;
+  font-style: italic;
+  padding: 0.5rem 0;
+}
+
+.banner a img {
+  height: 15rem;
+  margin-top: 1rem;
+  transition: all 120ms linear;
+}
+.banner a img:hover {
+  transform: rotate(27deg);
+}
+
+@media (max-width: 705px) {
+  .banner .image {
+    order: 1;
+  }
+
+  .banner .content {
+    order: 2;
+  }
 }
